@@ -4,7 +4,7 @@ let nomeUsuario = localStorage.getItem('nome');
 if(!nomeUsuario){
     nomeUsuario = prompt("Digite seu nome aqui:");
     if(nomeUsuario){
-        localStorage('nome', nomeUsuario );
+        localStorage.setItem('nome', nomeUsuario );
     }
     else{
         nomeUsuario = "...";
